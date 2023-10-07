@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>List of Countries</title>
+</head>
+<body>
+    <h1>List of Countries</h1>
+    <ul>
+    <% countries.forEach(country => { %>
+        <li><%= country.name %> - <%= country.alpha2Code %> - <%= country.alpha3Code %></li>
+    <% }); %>
+    </ul>
+</body>
+</html>
